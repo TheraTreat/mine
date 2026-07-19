@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens — "the chart, not the brochure".
+ * Clinical-clean base (chart paper + ink navy), one signature accent (scrub
+ * teal), and an ember accent that is CONTAINED to the YOG fiction shelf.
+ * All text/background pairs used at text sizes pass WCAG AA.
+ */
+@theme {
+  --color-paper: #f7f9fa; /* page background — cool near-white           */
+  --color-panel: #ffffff; /* field / card background                     */
+  --color-ink: #10233b; /* primary text — 13.9:1 on paper              */
+  --color-note: #43596e; /* secondary text — 6.9:1 on paper             */
+  --color-line: #d9e1e8; /* rules and field borders                     */
+  --color-scrub: #0e7c6b; /* scrub teal — decorative / large only        */
+  --color-scrub-ink: #0b5f53; /* teal at text sizes & button fills — AA      */
+  --color-scrub-tint: #eaf4f2;
+  --color-ember: #c2410c; /* fiction shelf — decorative / large only     */
+  --color-ember-ink: #93400f; /* ember at text sizes — AA on paper           */
+  --color-ember-tint: #faf0e8;
+  --color-deep: #0a1b2e; /* deep navy — footer, OG field, book boards   */
+}
+
+@theme inline {
+  --font-display: var(--font-bricolage);
+  --font-body: var(--font-publicsans);
+  --font-mono: var(--font-plexmono);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "ss01";
+  }
+
+  ::selection {
+    background-color: var(--color-scrub-ink);
+    color: #ffffff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-scrub-ink);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Signature motif helpers                                             */
+/* ------------------------------------------------------------------ */
+
+/* Monospace chart label — used for every section/field label sitewide */
+.chart-label {
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-note);
+}
+
+/* Dotted "form blank" underline for inline links */
+.dotted-link {
+  text-decoration: underline dotted;
+  text-decoration-color: color-mix(in srgb, var(--color-note) 55%, transparent);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
+  transition:
+    color 150ms ease,
+    text-decoration-color 150ms ease;
+}
+.dotted-link:hover {
+  color: var(--color-scrub-ink);
+  text-decoration-color: var(--color-scrub-ink);
+}
+
+/* ------------------------------------------------------------------ */
+/* Insights article typography (hand-rolled; no generic prose plugin)  */
+/* ------------------------------------------------------------------ */
+
+.insight-prose {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--color-ink);
+  max-width: 68ch;
+}
+.insight-prose > * + * {
+  margin-top: 1.15em;
+}
+.insight-prose h2 {
+  font-family: var(--font-display), sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 2.4em;
+  line-height: 1.25;
+}
+.insight-prose h3 {
+  font-family: var(--font-display), sans-serif;
+  font-size: 1.15rem;
+  font-weight: 650;
+  margin-top: 2em;
+}
+.insight-prose h2 + p,
+.insight-prose h3 + p {
+  margin-top: 0.6em;
+}
+.insight-prose a {
+  text-decoration: underline dotted;
+  text-decoration-color: color-mix(in srgb, var(--color-note) 55%, transparent);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
+}
+.insight-prose a:hover {
+  color: var(--color-scrub-ink);
+  text-decoration-color: var(--color-scrub-ink);
+}
+.insight-prose ul,
+.insight-prose ol {
+  padding-left: 1.4rem;
+}
+.insight-prose ul {
+  list-style: square;
+}
+.insight-prose ol {
+  list-style: decimal;
+}
+.insight-prose li {
+  padding-left: 0.2rem;
+}
+.insight-prose li + li {
+  margin-top: 0.4em;
+}
+.insight-prose li::marker {
+  color: var(--color-scrub-ink);
+}
+.insight-prose blockquote {
+  border-left: 2px solid var(--color-scrub);
+  padding-left: 1.1rem;
+  color: var(--color-note);
+}
+.insight-prose strong {
+  font-weight: 650;
+}
+.insight-prose code {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.88em;
+  background: var(--color-scrub-tint);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+}
+.insight-prose hr {
+  border: 0;
+  border-top: 1px dashed var(--color-line);
+  margin: 2.6rem auto;
+  max-width: 10rem;
+}
