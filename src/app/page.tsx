@@ -11,6 +11,7 @@ import { books, latestBook } from "@content/books";
 import { insights } from "@content/insights";
 import { now } from "@content/now";
 import { site } from "@content/site";
+import { vision } from "@content/vision";
 
 export const metadata: Metadata = {
   title: { absolute: `${site.name} — Occupational Therapist & Founder, TheraTreat` },
@@ -184,6 +185,27 @@ export default function HomePage() {
               </div>
             </div>
           </Field>
+        </Reveal>
+
+        {/* Closing manifesto — bridges to the full six-role vision */}
+        <Reveal>
+          <figure className="overflow-hidden rounded-lg bg-deep px-6 py-11 text-paper md:px-12 md:py-14">
+            <figcaption className="font-mono text-[11px] tracking-[0.16em] text-[#5ec8b4] uppercase">
+              The long view
+            </figcaption>
+            <blockquote className="mt-4 max-w-3xl font-display text-xl leading-[1.35] font-bold text-white md:text-[1.7rem]">
+              &ldquo;{vision.quote}&rdquo;
+            </blockquote>
+            <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-white/15 pt-5">
+              <p className="text-sm text-[#9fb3c8]">— {site.name}</p>
+              <Link
+                href="/vision"
+                className="text-sm font-medium text-[#5ec8b4] underline decoration-dotted underline-offset-4 transition-colors hover:text-white"
+              >
+                The six roles behind this →
+              </Link>
+            </div>
+          </figure>
         </Reveal>
       </div>
     </div>

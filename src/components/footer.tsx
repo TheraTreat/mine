@@ -4,6 +4,7 @@ import { site } from "@content/site";
 
 const navLinks = [
   { href: "/about", label: "About" },
+  { href: "/vision", label: "Vision" },
   { href: "/theratreat", label: "TheraTreat" },
   { href: "/writing", label: "Writing" },
   { href: "/insights", label: "Insights" },

@@ -34,6 +34,7 @@ for that string before launch.
 | `content/site.ts` | Name, thesis, email, LinkedIn, TheraTreat URL, role chips, home proof row, contact queues |
 | `content/now.ts` | The "Now" strip on the home page (bump `updated` when you edit) |
 | `content/about.ts` | About narrative paragraphs + timeline entries |
+| `content/vision.ts` | The `/vision` page: the six interconnected roles + the closing quote |
 | `content/theratreat.ts` | Problem stats, product modules, TheraDocs copy + demo, CTA |
 | `content/books.ts` | Both books: blurbs, years, publishers, buy links |
 | `content/talks.ts` | Speaking topics, booking CTA, past appearances |
@@ -77,7 +78,7 @@ is replaced by the list automatically.
 
 Checked on the production build:
 
-- [x] **Build**: all 18 routes prerendered static/SSG; no server runtime needed
+- [x] **Build**: all 19 routes prerendered static/SSG; no server runtime needed
 - [x] **Metadata**: per-page `<title>`/description via the Metadata API; canonical URL on every page (resolved against `metadataBase`)
 - [x] **Structured data**: `schema.org/Person` (+ both books) on home; `schema.org/Book` on each book page; `BlogPosting` on insights posts
 - [x] **OG images**: `next/og` template at `/opengraph-image` and per-post `/insights/[slug]/opengraph-image` (1200×630 PNG, self-hosted Plex Mono)

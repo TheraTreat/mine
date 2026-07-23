@@ -6,6 +6,7 @@ import { useState } from "react";
 
 const links = [
   { href: "/about", label: "About" },
+  { href: "/vision", label: "Vision" },
   { href: "/theratreat", label: "TheraTreat" },
   { href: "/writing", label: "Writing" },
   { href: "/insights", label: "Insights" },
@@ -30,7 +31,7 @@ export function Nav() {
           DR<span aria-hidden className="text-scrub">.</span> YOGESH SHINGANE
         </Link>
 
-        <nav aria-label="Primary" className="hidden items-center gap-6 md:flex">
+        <nav aria-label="Primary" className="hidden items-center gap-x-5 md:flex lg:gap-x-6">
           {links.map((link) => (
             <Link
               key={link.href}
