@@ -8,6 +8,6 @@ export const now = {
     // TODO: Yog to review — replace with what's actually true this quarter.
     "Piloting TheraDocs — voice-to-SOAP notes in Marathi, Hindi and English — with early clinics in Pune.",
     "Recruiting TheraTreat's first cohort of design-partner clinics.",
-    "Drafting Book 2 of the Planet Arka series.",
+    "Drafting Book 2 of The Saga of Arka.",
   ],
 } as const;

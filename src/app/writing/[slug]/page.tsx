@@ -55,7 +55,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
     inLanguage: "en",
     datePublished: book.year,
     ...(book.publisher ? { publisher: { "@type": "Organization", name: book.publisher } } : {}),
-    ...(book.seriesNote ? { isPartOf: { "@type": "BookSeries", name: "Planet Arka" } } : {}),
+    ...(book.seriesNote ? { isPartOf: { "@type": "BookSeries", name: "The Saga of Arka" } } : {}),
   };
 
   return (

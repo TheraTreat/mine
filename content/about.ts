@@ -9,7 +9,7 @@ export const about = {
     "I'm an occupational therapist from Pune. My work started where all therapy starts: on the clinic floor — assessments, session plans, home programmes, and the slow, unglamorous business of helping people get function back.",
     "Every one of those sessions ended the same way: documentation. Notes written after the last patient left. Records that never followed the person they were about. Referrals travelling as WhatsApp forwards. Outcomes nobody could compare across two clinics, let alone a country. India's rehab ecosystem doesn't lack therapists — it lacks infrastructure.",
     "So I started building it. TheraTreat is the company I founded with my two brothers to give therapy practices an actual operating system: intake, scheduling, documentation, outcomes, billing — one clinical record instead of five apps and a drawer of paper. The wedge is TheraDocs: speak the session in Marathi, Hindi or English, review the structured SOAP note, sign it. The therapist stays the author of the record; the software just stops the record from being the worst part of the job.",
-    "I also write. Nonfiction as myself — Therapy for All, on making therapy part of everyday healthcare in India. Fiction as YOG — the Planet Arka series, which begins with The Survivvl: Awakening of the Dark. Two shelves, kept deliberately apart, but it's the same job on both: take an idea, give it structure, and get it to stand up and walk.",
+    "I also write. Nonfiction as myself — Therapy for All, on making therapy part of everyday healthcare in India. Fiction as YOG — The Saga of Arka, the series set on the world of Arka, which begins with The Survivvl: Awakening of the Dark. Two shelves, kept deliberately apart, but it's the same job on both: take an idea, give it structure, and get it to stand up and walk.",
   ],
 
   /** TODO: Yog to review — years and details are plausible placeholders; correct them. */
@@ -40,7 +40,7 @@ export const about = {
     },
     {
       year: "2025",
-      title: "TheraDocs ships · Planet Arka begins",
+      title: "TheraDocs ships · The Saga of Arka begins",
       detail:
         "Shipped the documentation wedge — voice-to-SOAP in Marathi, Hindi and English. Published The Survivvl: Awakening of the Dark as YOG.",
     },

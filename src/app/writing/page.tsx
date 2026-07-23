@@ -9,7 +9,7 @@ import { fictionShelf, nonfictionShelf, type Book } from "@content/books";
 export const metadata = pageMetadata({
   title: "Writing",
   description:
-    "Two shelves, two bylines: Therapy for All (nonfiction, as Dr. Yogesh Shingane) and the Planet Arka fantasy series (as YOG), beginning with The Survivvl: Awakening of the Dark.",
+    "Two shelves, two bylines: Therapy for All (nonfiction, as Dr. Yogesh Shingane) and the fantasy series The Saga of Arka (as YOG), beginning with The Survivvl: Awakening of the Dark.",
   path: "/writing",
 });
 

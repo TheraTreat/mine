@@ -20,7 +20,7 @@ export const site = {
     "I see patients, run TheraTreat, and write — nonfiction as myself, fantasy as YOG. Same discipline in all three: structure first, then the story.",
 
   description:
-    "Dr. Yogesh Shingane is an occupational therapist and the Founder & CEO of TheraTreat, a clinical operating system for India's therapy and rehabilitation ecosystem. Author of Therapy for All, and of the Planet Arka fantasy series as YOG.",
+    "Dr. Yogesh Shingane is an occupational therapist and the Founder & CEO of TheraTreat, a clinical operating system for India's therapy and rehabilitation ecosystem. Author of Therapy for All, and of the fantasy series The Saga of Arka as YOG.",
 
   /** Role chips under the hero thesis. */
   roles: [
@@ -54,7 +54,7 @@ export const site = {
     },
     {
       label: "Reader mail",
-      detail: "Therapy for All and Planet Arka both. Slowest queue, always answered.",
+      detail: "Therapy for All and The Saga of Arka both. Slowest queue, always answered.",
     },
   ],
 
@@ -81,7 +81,7 @@ export const site = {
     {
       kicker: "Fiction",
       label: "The Survivvl",
-      sub: "as YOG · Planet Arka #1",
+      sub: "as YOG · Saga of Arka #1",
       href: "/writing/the-survivvl-awakening-of-the-dark",
     },
     {

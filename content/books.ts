@@ -59,13 +59,13 @@ export const books: Book[] = [
     shelf: "fiction",
     accent: "ember",
     year: "2025", // TODO: Yog to review — confirm publication year.
-    seriesNote: "Book 1 of the Planet Arka series",
+    seriesNote: "Book 1 of The Saga of Arka",
     blurbShort: "On Planet Arka, the dark doesn't fall. It wakes.",
     blurb: [
       // TODO: Yog to review — placeholder premise; replace with the real jacket copy.
       "Arka has always kept its own rules — a world of hard land and harder people, where survival is a craft passed down like a family trade. Then something old beneath the surface stirs, and the rules stop holding.",
       "The Survivvl: Awakening of the Dark follows the ones caught at the seam of it: ordinary survivors forced to learn, faster than the dark spreads, what their world has been hiding — and what surviving it will make of them.",
-      "Book 1 of the Planet Arka series. Book 2 is being drafted now.",
+      "Book 1 of The Saga of Arka. Book 2 is being drafted now.",
     ],
     buyLinks: [
       // TODO: Yog to review — drop in the real retailer URLs.
