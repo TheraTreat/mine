@@ -4,6 +4,7 @@ import { motion, type Variants } from "framer-motion";
 import Link from "next/link";
 
 import { site } from "@content/site";
+import { vision } from "@content/vision";
 
 const container: Variants = {
   hidden: {},
@@ -56,18 +57,26 @@ export function Hero() {
           {site.subThesis}
         </motion.p>
 
-        <motion.ul variants={item} className="mt-8 flex flex-wrap gap-2.5" aria-label="Roles">
-          {site.roles.map((role) => (
-            <li key={role.label}>
-              <Link
-                href={role.href}
-                className="inline-flex items-center rounded-full border border-line bg-panel px-4 py-1.5 text-sm font-medium transition-colors hover:border-scrub-ink hover:text-scrub-ink"
-              >
-                {role.label}
-              </Link>
-            </li>
-          ))}
-        </motion.ul>
+        <motion.div variants={item} className="mt-8">
+          <p className="chart-label mb-3">Six roles · one throughline</p>
+          <ul className="flex flex-wrap gap-2.5" aria-label="Roles">
+            {vision.roles.map((role) => (
+              <li key={role.title}>
+                <Link
+                  href={role.href ?? "/vision"}
+                  className="inline-flex items-center rounded-full border border-line bg-panel px-4 py-1.5 text-sm font-medium transition-colors hover:border-scrub-ink hover:text-scrub-ink"
+                >
+                  {role.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4">
+            <Link href="/vision" className="dotted-link text-sm font-medium">
+              Why these six →
+            </Link>
+          </p>
+        </motion.div>
       </motion.div>
     </section>
   );

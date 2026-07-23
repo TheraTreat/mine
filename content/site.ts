@@ -22,13 +22,6 @@ export const site = {
   description:
     "Dr. Yogesh Shingane is an occupational therapist and the Founder & CEO of TheraTreat, a clinical operating system for India's therapy and rehabilitation ecosystem. Author of Therapy for All, and of the fantasy series The Saga of Arka as YOG.",
 
-  /** Role chips under the hero thesis. */
-  roles: [
-    { label: "Clinician", href: "/about" },
-    { label: "Founder · TheraTreat", href: "/theratreat" },
-    { label: "Author", href: "/writing" },
-  ],
-
   /** TODO: Yog to review — swap for a branded address (e.g. yogesh@theratreat…) when ready. */
   email: "shinganeyogesh2@gmail.com",
 

@@ -14,27 +14,29 @@ export type VisionRole = {
 };
 
 export const vision = {
-  lede: "I believe meaningful impact comes from building across disciplines—where healthcare, technology, education, and storytelling come together to improve lives. My work reflects this philosophy through six interconnected roles.",
+  lede: "Six roles, not six careers. One throughline runs through all of them: see the problem on the clinic floor, build the system that fixes it, and write down what holds up. Healthcare, AI and storytelling, held to the same standard.",
 
+  // TODO: Yog to review — tightened to the site's direct, specifics-first voice.
+  // Confirm each still says what you mean.
   roles: [
     {
       icon: "🩺",
       title: "Healthcare Entrepreneur",
-      body: "As the Founder & CEO of TheraTreat, I am building a comprehensive digital ecosystem that makes rehabilitation services more accessible, connected, and patient-centered. My mission is to empower individuals, therapists, healthcare organizations, and communities through innovative solutions that improve access to quality therapy.",
+      body: "Founder & CEO of TheraTreat — the clinical operating system for India's therapy and rehabilitation practices. One patient record instead of five apps and a paper drawer: intake, scheduling, documentation, outcomes and billing, built from inside the clinic.",
       href: "/theratreat",
       linkLabel: "TheraTreat",
     },
     {
       icon: "🤖",
       title: "AI Innovator",
-      body: "I am passionate about applying artificial intelligence to rehabilitation and digital health. My focus is on developing responsible, evidence-informed AI systems that support clinical decision-making, enhance patient engagement, and help healthcare professionals deliver more personalized care.",
+      body: "I build clinical AI that keeps the clinician accountable. TheraDocs turns a spoken session — Marathi, Hindi or English — into a structured SOAP note the therapist reviews and signs. The model drafts; the clinician's name stays on the record.",
       href: "/insights",
       linkLabel: "The thinking",
     },
     {
       icon: "📚",
       title: "Nonfiction Author",
-      body: "Through Therapy for All, I aim to make rehabilitation knowledge understandable and accessible to everyone. By translating complex healthcare concepts into practical insights, I hope to empower patients, caregivers, students, and professionals to better understand the transformative role of therapy.",
+      body: "Author of Therapy for All (Arkorath Press) — the case for therapy as everyday healthcare in India, written for the families and clinicians who deliver it. Plain language, practical, no jargon.",
       href: "/writing/therapy-for-all",
       linkLabel: "Therapy for All",
     },
@@ -42,26 +44,27 @@ export const vision = {
       icon: "✍️",
       title: "Fantasy Novelist",
       // Series: The Saga of Arka. Book title keeps the stylised double-v: The Survivvl.
-      body: "Beyond healthcare, I explore the power of storytelling through The Saga of Arka, an original fantasy series beginning with The Survivvl: Awakening of the Dark. These stories are driven by themes of resilience, courage, sacrifice, and the choices that define individuals and civilizations.",
+      body: "As YOG, I write The Saga of Arka — a fantasy series set on the world of Arka, beginning with The Survivvl: Awakening of the Dark. Kept deliberately apart from the clinical work; the same discipline underneath — structure first, then the story. Book 2 in draft.",
       href: "/writing/the-survivvl-awakening-of-the-dark",
       linkLabel: "The Survivvl",
     },
     {
       icon: "🎤",
       title: "Speaker",
-      body: "I enjoy sharing ideas at conferences, universities, industry events, and leadership forums. My talks focus on the intersection of healthcare, artificial intelligence, entrepreneurship, innovation, leadership, and the future of rehabilitation, with the goal of inspiring meaningful action and collaboration.",
+      body: "I speak on clinical AI in rehab, voice documentation in Indian languages, and the clinician-founder path — at conferences, universities and industry events. Every talk comes from practice, not slideware.",
       href: "/speaking",
       linkLabel: "Talk topics",
     },
     {
       icon: "🌍",
       title: "Builder",
-      body: "At the heart of everything I do is a commitment to building—whether it's healthcare platforms, AI solutions, educational resources, books, or communities. My long-term vision is to create products, knowledge, and stories that improve lives, inspire innovation, and leave a lasting positive impact on society.",
+      body: "The common verb under all of it is build — platforms, AI, books, and the communities around them. I'd rather ship the boring infrastructure that compounds than chase the demo that impresses.",
       href: "/about",
       linkLabel: "The arc",
     },
   ] satisfies VisionRole[],
 
+  // The manifesto line — kept verbatim; it's a quotation.
   quote:
     "I don't aspire to build just a successful company. I aspire to build solutions that improve lives, knowledge that empowers people, and stories that inspire generations.",
 } as const;
